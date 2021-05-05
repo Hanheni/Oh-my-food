@@ -9,9 +9,17 @@
   text-align: center;
 }
 
+.maintexts {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+body {
+  font-family: roboto;
+}
+
 .body__layout {
   margin: 0 auto;
-  font-family: roboto;
 }
 
 .header__title {

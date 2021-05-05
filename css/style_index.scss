@@ -12,15 +12,28 @@ $highlights: rgb(153, 226, 208);
 
 .subtexts{
     font-weight:300;
-    
+
     &--header{
         text-align:center;
     }
 }
 
+.maintexts{
+
+    font-size:25px;
+    font-weight: 500;
+    
+    &--buttons{
+
+    }
+}
+
+body{
+    font-family: roboto;
+}
+
 .body__layout {
     margin: 0 auto;
-    font-family: roboto;
 }
 
 .header__title {
