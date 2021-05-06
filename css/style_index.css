@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-.header__title {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +38,7 @@ body {
           justify-content: center;
 }
 
-.header__title .header__subtitle {
+.header__container .header__subtitle {
   text-align: center;
 }
 
