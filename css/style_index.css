@@ -212,8 +212,6 @@ body {
 /* ------------------------------ results cards ----------------------------- */
 .o-results__container {
   width: 100%;
-  margin-left: -10px;
-  padding-left: 20px;
   background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,7 +236,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .a-cards__images {
