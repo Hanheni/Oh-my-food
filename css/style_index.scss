@@ -1,5 +1,5 @@
 
-/* ----------------------------- color variables ---------------------------- */
+/* ---------------------------- color variables ---------------------------- */
 
 $primary: rgb(170, 79, 255);
 $seconday : rgb(237, 105, 255);
@@ -8,50 +8,105 @@ $highlights: rgb(153, 226, 208);
 /* --------------------------- end color variables -------------------------- */
 
 
+.background--subtitle{
+    background-color: #d8d8d8;
+    padding:10px;
+    width:100%;
+    margin-left:-10px;
+    margin-top:0;
+}
+
+.background--gradient{
+    
+    background: rgb(245, 245, 245);
+}
+
 /* ------------------------ texts and subtexts specs ------------------------ */
-
-.subtexts{
-    font-weight:300;
-
-    &--header{
-        text-align:center;
-    }
-}
-
-.maintexts{
-
-    font-size:25px;
-    font-weight: 500;
-
-    &--buttons{
-
-    }
-}
-
 body{
     font-family: roboto;
 }
 
 .body__layout {
     margin: 0 auto;
+    
 }
 
-.header__container {
+
+.maintexts{
+    font-size:25px;
+    font-weight: 500;
+    width:100%;
+
+    &ubs{
+        text-align: center;
+    }
+
+    &ubs__heading{
+        padding:0 20px;
+    }
+
+    &ubs__restaurants{
+        margin: 15px 0 0 10px;
+    }
+}
+
+
+.subtexts{
+    font-weight:300;
+    margin: 15px 0 0 10px;
+    padding-bottom:15px;
+    &__heading{
+        text-align: center;
+        width:100%;
+    }
+
+    &ubs{
+        font-weight: 100;
+    }
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+/* ------------------------------- page header ------------------------------ */
+
+
+.o-heading__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-        .header__subtitle {
+        .heading__subtitle {
             text-align: center;
         }
 }
 
-.header__logo{
-    height:30px;
-    margin-top:15px;
+.o-container__logo{
+    position: relative;	
+    box-shadow: 0px 10px 10px -12px rgba(0,0,0,0.5);
+    width:100%;
+    padding: 0 20px;
+    display:flex;
+    justify-content: center;
 }
 
-.buttons__validate {
+.o-logo{
+    height:30px;
+    margin-top:15px;
+    padding-bottom:20px;
+    box-shadow:black 2px;
+    
+}
+
+.maintextsubs__heading{
+    width:100%;
+    padding: 0 10px;
+    padding-bottom: 50px;
+}
+
+.buttons__pillshaped{
     margin: auto;
     display: flex;
     justify-content: center;
@@ -62,14 +117,92 @@ body{
     height: 25px;
     width:fit-content;
     padding: 10px 25px;
-        
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight:500;
-        }
+
 
         &:hover{
             opacity: 75%;
         }
     }
+
+/* ------------------------------- end header ------------------------------- */
+
+/* ------------------------------- menu steps ------------------------------- */
+
+    .o-steps__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width:100%;
+        margin-left:20px;
+    }
+
+    .m-steps__main{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:100%;
+    }
+
+
+    .m-steps__buttons{
+        display:flex;
+        align-items: center;
+        justify-content:flex-start;
+        width:95%;
+        border-radius: 20px;
+        margin-bottom:20px;
+        padding: 8px 0px;
+        text-align: center;
+        box-sizing: border-box;
+        background-color: bisque;
+        box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.3);
+
+    }
+
+    .a-steps__buttonsnumbubbles{
+        width:14px;
+        border-radius: 25px;
+        background-color: aquamarine;
+        margin-left:-13px;
+        padding:5px;
+    }
+
+    .a-steps__buttonsicons{
+        margin: 0 20px;
+    }
+
+    .fa{
+        width:16px;
+        text-align: center;
+    }
+/* ----------------------------- end menu steps ----------------------------- */
+
+/* ------------------------------ results cards ----------------------------- */
+
+.o-results__container{
+    width:100%;
+    margin-left:-10px;
+    padding-left:20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.m-results__cards{
+
+    width:90%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:15px;
+
+
+}
+
+.a-cards__images{
+    width:100%;
+    background-position: center center;
+    border-top-left-radius: 13.5px;
+    border-top-right-radius: 13.5px;
+}

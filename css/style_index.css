@@ -1,19 +1,18 @@
-/* ----------------------------- color variables ---------------------------- */
+/* ---------------------------- color variables ---------------------------- */
 /* --------------------------- end color variables -------------------------- */
+.background--subtitle {
+  background-color: #d8d8d8;
+  padding: 10px;
+  width: 100%;
+  margin-left: -10px;
+  margin-top: 0;
+}
+
+.background--gradient {
+  background: whitesmoke;
+}
+
 /* ------------------------ texts and subtexts specs ------------------------ */
-.subtexts {
-  font-weight: 300;
-}
-
-.subtexts--header {
-  text-align: center;
-}
-
-.maintexts {
-  font-size: 25px;
-  font-weight: 500;
-}
-
 body {
   font-family: roboto;
 }
@@ -22,7 +21,48 @@ body {
   margin: 0 auto;
 }
 
-.header__container {
+.maintexts {
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.maintextsubs {
+  text-align: center;
+}
+
+.maintextsubs__heading {
+  padding: 0 20px;
+}
+
+.maintextsubs__restaurants {
+  margin: 15px 0 0 10px;
+}
+
+.subtexts {
+  font-weight: 300;
+  margin: 15px 0 0 10px;
+  padding-bottom: 15px;
+}
+
+.subtexts__heading {
+  text-align: center;
+  width: 100%;
+}
+
+.subtextsubs {
+  font-weight: 100;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* ------------------------------- page header ------------------------------ */
+.o-heading__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,21 +73,41 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.o-heading__container .heading__subtitle {
+  text-align: center;
+}
+
+.o-container__logo {
+  position: relative;
+  -webkit-box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.header__container .header__subtitle {
-  text-align: center;
-}
-
-.header__logo {
+.o-logo {
   height: 30px;
   margin-top: 15px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: black 2px;
+          box-shadow: black 2px;
 }
 
-.buttons__validate {
+.maintextsubs__heading {
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 50px;
+}
+
+.buttons__pillshaped {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,13 +129,112 @@ body {
   padding: 10px 25px;
 }
 
-.buttons__validate a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
+.buttons__pillshaped:hover {
+  opacity: 75%;
 }
 
-.buttons__validate:hover {
-  opacity: 75%;
+/* ------------------------------- end header ------------------------------- */
+/* ------------------------------- menu steps ------------------------------- */
+.o-steps__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.m-steps__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.m-steps__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 95%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 8px 0px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: bisque;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
+}
+
+.a-steps__buttonsnumbubbles {
+  width: 14px;
+  border-radius: 25px;
+  background-color: aquamarine;
+  margin-left: -13px;
+  padding: 5px;
+}
+
+.a-steps__buttonsicons {
+  margin: 0 20px;
+}
+
+.fa {
+  width: 16px;
+  text-align: center;
+}
+
+/* ----------------------------- end menu steps ----------------------------- */
+/* ------------------------------ results cards ----------------------------- */
+.o-results__container {
+  width: 100%;
+  margin-left: -10px;
+  padding-left: 20px;
+  background-color: whitesmoke;
+}
+
+.m-results__cards {
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.a-cards__images {
+  width: 100%;
+  background-position: center center;
+  border-top-left-radius: 13.5px;
+  border-top-right-radius: 13.5px;
 }
 /*# sourceMappingURL=style_index.css.map */

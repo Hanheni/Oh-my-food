@@ -1,18 +1,38 @@
 /* ----------------------------- color variables ---------------------------- */
 /* --------------------------- end color variables -------------------------- */
-.body__layout {
-  margin: 0 auto;
+/* ------------------------ texts and subtexts specs ------------------------ */
+.subtexts {
+  font-weight: 300;
+}
+.subtexts--header {
+  text-align: center;
+}
+
+.maintexts {
+  font-size: 25px;
+  font-weight: 500;
+}
+body {
   font-family: roboto;
 }
 
-.header__title {
+.body__layout {
+  margin: 0 auto;
+}
+
+.header__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.header__title .header__subtitle {
+.header__container .header__subtitle {
   text-align: center;
+}
+
+.header__logo {
+  height: 30px;
+  margin-top: 15px;
 }
 
 .buttons__validate {
@@ -22,11 +42,10 @@
   align-items: center;
   border-radius: 25px;
   font-weight: bold;
-  background: #9222c3;
-  background: linear-gradient(0deg, primary 0%, secondary 100%);
-  width: 250px;
+  background: linear-gradient(0deg, #aa4fff 0%, #ed69ff 100%);
   height: 25px;
-  padding: 10px;
+  width: fit-content;
+  padding: 10px 25px;
 }
 .buttons__validate a {
   text-decoration: none;

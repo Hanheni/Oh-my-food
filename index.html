@@ -10,56 +10,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- so chrome stops resizing while in mobile prevbiew mode-->
+<!-- so chrome stops resizing while in mobile preview mode -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 </head>
 
-
 <body>
-    <div class="body__layout">
-        <div class="heading">
-            <img class="bodyheading__logo" src="images/logo/ohmyfood.png">
-            <div class="header__subtitle">
-                <p>Paris, Belleville</p>
-                <p class="maintexts">Book the menu you like</div>
-                <p class="subtexts subtexts--header">Discover top-of-the-art restaurants we picked for you</p>
-                <div class="buttons__validate"><a href="/results_restaurants.html">Explore our restaurants</a></div>
-            </div>
+<div class="body__layout">
+
+<!--------------------- page header with logo, subtext ---------------------->
+        <div class="o-heading__container">
+            <div class="o-container__logo"><img class="o-logo" alt="Oh My Food logo" src="images/logo/ohmyfood.png"></div>
+            <div class="maintextsubs__heading background--gradient">
+                <p class="maintextsubs background--subtitle"><i class="fa fa-map-marker" aria-hidden="true"></i>Paris, Belleville</p>
+                <p class="heading__subtitle">Book the menu you like</p>
+                <p class="subtextsubs subtexts__heading">Discover top-of-the-art restaurants we picked for you</p>
+                <div class="buttons__pillshaped"><a href="/results_restaurants.html" class="links">Explore our restaurants</a></div>
+        </div>
+        </div>
+        
+<!------------------- end page header with logo, subtext ---------------->
+
+<!--------------------------- menu steps ordering -------------------------->
+<div class="o-steps__container">
+<p class="maintexts">How it works</p>
+    <div class="m-steps__main">
+        <div class="m-steps__buttons">
+            <div class="a-steps__buttonsnumbubbles">1</div>
+            <div class="a-steps__buttonsicons"><i class="fa fa-mobile" aria-hidden="true"></i></i></div>
+            <p class="maintextsubs">Chose a restaurant</p>
+        </div>
+        <div class="m-steps__buttons">
+            <div class="a-steps__buttonsnumbubbles">2</div>
+            <div class="a-steps__buttonsicons"><i class="fa fa-list" aria-hidden="true"></i></div>
+            <p class="maintextsubs">Create your menu</p>
+        </div>
+        <div class="m-steps__buttons">
+            <div class="a-steps__buttonsnumbubbles">3</div>
+            <div class="a-steps__buttonsicons"><i class="fa fa-shopping-bag"></i></div>
+            <p class="maintextsubs">Go enjoy it at the restaurant</p>
         </div>
     </div>
+</div>
 
-    <div class="menu__steps"><p class="maintexts">How it works</p>
-        <div class="menu__steps--buttons">
-            <div class="menu__steps--numbubbles">1</div>
-            <div class="menu__steps--icons"></div>
-            <p class="maintexts__buttons">Chose a restaurant</p>
-        </div>
+<!------------------------- end menu steps ordering ------------------------->
 
-        <div class="menu__steps--buttons">
-            <div class="menu__steps--numbubbles">2</div>
-            <div class="menu__steps--icons"></div>
-            <p class="maintexts__buttons">Create your menu</p>
-        </div>
 
-        <div class="menu__steps--buttons">
-            <div class="menu__steps--numbubbles">3</div>
-            <div class="menu__steps--icons"></div>
-            <p class="maintexts__buttons">Go enjoy it at the restaurant</p>
-        </div>
-    </div>
-
-    <div class="results__container">
+<!-- -------------------------- container results ------------------------>
+    <div class="o-results__container">
         <p class="maintexts">Restaurants</p>
-        <div class="results__cards">
-            <p class="maintexts">The Full Palette</p>
+        <div class="m-results__cards">
+            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="a-cards__images">
+            <p class="maintextsubs__restaurants">The Full Palette</p>
             <p class="subtexts">New York</p>
         </div>
-
-
-
+        <div class="m-results__cards">
+            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant The Full Palette" class="a-cards__images">
+            <p class="maintextsubs__restaurants">The Full Palette</p>
+            <p class="subtexts">New York</p>
+        </div>
+        <div class="m-results__cards">
+            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="a-cards__images">
+            <p class="maintextsubs__restaurants">The Full Palette</p>
+            <p class="subtexts">New York</p>
+        </div>
     </div>
 
+</div>
 
 
 
