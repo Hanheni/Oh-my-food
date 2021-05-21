@@ -212,7 +212,7 @@ body {
 /* ------------------------------ results cards ----------------------------- */
 .o-results__container {
   width: 100%;
-  background-color: whitesmoke;
+  background-color: #aa7373;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +227,7 @@ body {
 
 .m-results__cards {
   width: 90%;
-  background-color: white;
+  background-color: #f70000;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,4 +245,4 @@ body {
   border-top-left-radius: 13.5px;
   border-top-right-radius: 13.5px;
 }
-/*# sourceMappingURL=style_index.css.map */
+/*# sourceMappingURL=styles.css.map */
