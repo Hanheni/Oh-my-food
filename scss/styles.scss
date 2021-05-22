@@ -4,21 +4,20 @@
 $primary: rgb(170, 79, 255);
 $seconday : rgb(237, 105, 255);
 $highlights: rgb(153, 226, 208);
+$backgrounds: rgb(245, 245, 245);
 
 /* --------------------------- end color variables -------------------------- */
 
 
-.background--subtitle{
-    background-color: #d8d8d8;
-    padding:10px;
-    width:100%;
-    margin-left:-10px;
+.backgrounds{
     margin-top:0;
-}
+    background: $backgrounds;
 
-.background--gradient{
-    
-    background: rgb(245, 245, 245);
+    &--subtitle{
+        background: #d8d8d8;
+        padding:5px 0;
+    }
+
 }
 
 /* ------------------------ texts and subtexts specs ------------------------ */
@@ -183,7 +182,7 @@ body{
 
 .o-results__container{
     width:100%;
-    background-color: rgb(170, 115, 115);
+    background-color:$backgrounds;
     display: flex;
     flex-direction: column;
     align-items: center;
