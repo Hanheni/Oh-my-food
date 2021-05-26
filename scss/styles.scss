@@ -31,18 +31,8 @@ body{
 }
 
 
-.maintexts{
-    font-size:25px;
-    font-weight: 500;
-    width:100%;
-
-    &ubs{
+.maintextsubs{
         text-align: center;
-    }
-
-    &ubs__heading{
-        padding:0 20px;
-    }
 
     &ubs__restaurants{
         margin: 15px 0 0 10px;
@@ -54,12 +44,8 @@ body{
     font-weight:300;
     margin: 15px 0 0 10px;
     padding-bottom:15px;
-    &__heading{
-        text-align: center;
-        width:100%;
-    }
 
-    &ubs{
+    &-thin{
         font-weight: 100;
     }
 }
@@ -127,24 +113,6 @@ body{
 
 /* ------------------------------- menu steps ------------------------------- */
 
-    .o-steps__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width:100%;
-        margin-left:20px;
-    }
-
-    .m-steps__main{
-        display:flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width:100%;
-    }
-
-
     .m-steps__buttons{
         display:flex;
         align-items: center;
@@ -178,14 +146,10 @@ body{
 /* ----------------------------- end menu steps ----------------------------- */
 
 /* ------------------------------ results cards ----------------------------- */
+@import 'components/_containers.scss';
 
-.o-results__container{
-    width:100%;
-    background-color:$backgrounds;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@import 'components/_cards';
 
-@import'components/_cards';
+@import 'components/_items_center';
 
+@import 'components/_items_left';

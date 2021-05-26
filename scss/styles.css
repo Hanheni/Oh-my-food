@@ -19,21 +19,11 @@ body {
   margin: 0 auto;
 }
 
-.maintexts {
-  font-size: 25px;
-  font-weight: 500;
-  width: 100%;
-}
-
 .maintextsubs {
   text-align: center;
 }
 
-.maintextsubs__heading {
-  padding: 0 20px;
-}
-
-.maintextsubs__restaurants {
+.maintextsubsubs__restaurants {
   margin: 15px 0 0 10px;
 }
 
@@ -43,12 +33,7 @@ body {
   padding-bottom: 15px;
 }
 
-.subtexts__heading {
-  text-align: center;
-  width: 100%;
-}
-
-.subtextsubs {
+.subtexts-thin {
   font-weight: 100;
 }
 
@@ -133,40 +118,6 @@ body {
 
 /* ------------------------------- end header ------------------------------- */
 /* ------------------------------- menu steps ------------------------------- */
-.o-steps__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 100%;
-  margin-left: 20px;
-}
-
-.m-steps__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 100%;
-}
-
 .m-steps__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,9 +159,7 @@ body {
 
 /* ----------------------------- end menu steps ----------------------------- */
 /* ------------------------------ results cards ----------------------------- */
-.o-results__container {
-  width: 100%;
-  background-color: whitesmoke;
+.o-containers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,16 +167,48 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.o-containers_footer {
+  background-color: #444444;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.o-containers_faq {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.o-container__logo {
+  background-color: white;
 }
 
 .m-results__cards {
   border-top-left-radius: 13.5px;
   border-top-right-radius: 13.5px;
   width: 90%;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,5 +242,20 @@ body {
   width: 100%;
   height: 180px;
   background-position: center center;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.text__left {
+  margin-right: 60%;
+}
+
+.text__left--mrg15 {
+  font-weight: 300;
+  margin: 15px 0 0 10px;
+  padding-bottom: 15px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=styles.css.map */

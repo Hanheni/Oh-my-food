@@ -1,0 +1,27 @@
+.o-containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:100%;
+    background-color: $backgrounds;
+
+        &_footer{
+            background-color: rgb(68, 68, 68);
+            text-decoration-color: white;
+        }
+
+        &_faq{
+            align-items: center;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+
+    }
+
+}  
+
+.o-container__logo{
+    background-color:white;
+}
