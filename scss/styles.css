@@ -3,6 +3,7 @@
 .backgrounds {
   margin-top: 0;
   background: whitesmoke;
+  width: 100%;
 }
 
 .backgrounds--subtitle {
@@ -13,10 +14,7 @@
 /* ------------------------ texts and subtexts specs ------------------------ */
 body {
   font-family: roboto;
-}
-
-.body__layout {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .maintextsubs {
@@ -177,6 +175,7 @@ body {
       align-content: center;
   width: 100%;
   background-color: whitesmoke;
+  padding: 20px 0;
 }
 
 .o-containers_footer {
@@ -198,18 +197,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 10px;
 }
 
 .o-container__logo {
   background-color: white;
 }
 
-.m-results__cards {
+.a-cards__image--restaurant {
+  background-size: cover;
+  height: 180px;
+  background-position: center center;
   border-top-left-radius: 13.5px;
   border-top-right-radius: 13.5px;
+}
+
+.m-results__cards {
   width: 90%;
+  max-height: 250px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 13.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,30 +225,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 25px;
-}
-
-.a-cards__image--restaurant-1 {
-  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 180px;
-  background-position: center center;
-}
-
-.a-cards__image--restaurant-2 {
-  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 180px;
-  background-position: center center;
-}
-
-.a-cards__image--restaurant-3 {
-  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 180px;
-  background-position: center center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .text__center {
@@ -249,7 +234,8 @@ body {
 }
 
 .text__left {
-  margin-right: 60%;
+  margin-right: -90px;
+  width: 100%;
 }
 
 .text__left--mrg15 {

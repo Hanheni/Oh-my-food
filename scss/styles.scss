@@ -12,6 +12,7 @@ $backgrounds: rgb(245, 245, 245);
 .backgrounds{
     margin-top:0;
     background: $backgrounds;
+    width:100%;
 
     &--subtitle{
         background: #d8d8d8;
@@ -23,11 +24,7 @@ $backgrounds: rgb(245, 245, 245);
 /* ------------------------ texts and subtexts specs ------------------------ */
 body{
     font-family: roboto;
-}
-
-.body__layout {
-    margin: 0 auto;
-    
+    margin:0;
 }
 
 
@@ -110,7 +107,7 @@ body{
     }
 
 /* ------------------------------- end header ------------------------------- */
-
+//ANCHOR header
 /* ------------------------------- menu steps ------------------------------- */
 
     .m-steps__buttons{
