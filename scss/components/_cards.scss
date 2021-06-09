@@ -24,3 +24,51 @@
 
 }
 
+.fa-heart{
+        margin: -34px 40px 20px auto;
+        color: lightslategrey;
+        font-size: larger;
+        appearance: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: 500ms;
+
+        
+        &:checked{
+            margin: -34px 40px 20px auto;
+            font-weight: 900;
+            cursor: pointer;
+            background: -webkit-gradient(linear, right top, left bottom, from($primary), to($secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: translate(0px, 0px);
+        }
+
+        &:active{
+            font-weight: 900;
+            background: -webkit-gradient(linear, right top, left bottom, from($primary), to($secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation-name: fadeOut;
+            -webkit-animation-duration: 280ms;
+            animation-name: fadeOut;
+            animation-duration:280ms;
+            transform: translate(0px, -30px) scale(1.05);
+            transition: transform 350ms;
+            transition-timing-function: cubic-bezier(0, 0, 1, 1);
+            opacity: 0%;
+        }
+    }
+            /* -------------------------------- keyframes fadeOut ------------------------------- */
+
+            @-webkit-keyframes fadeOut { 
+                0% { opacity: 0.7; }
+                20% { opacity: 0.5; }
+                40% { opacity: 0.3; }
+                60% { opacity: 0.3; }
+                80% { opacity: 0.1; }
+                100% { opacity: 0; }
+            }
+            
+            
+
