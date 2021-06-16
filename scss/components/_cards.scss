@@ -1,3 +1,5 @@
+//ANCHOR header
+
 @mixin body_cards{
     width:90%;
     max-height: 250px;
@@ -7,6 +9,7 @@
     flex-direction: column;
     margin-bottom:25px;
     box-sizing: border-box;
+    box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.3);
 }
 
 .a-cards__image--restaurant{
@@ -17,15 +20,23 @@
     border-top-right-radius: 13.5px;
 }
 
-
-
 .m-results__cards{
     @include body_cards();
+}
 
+
+input[type='checkbox']{
+    display: none;
+    margin-right:-17px;
+}
+
+
+.heart {
+    margin: -34px 40px 30px auto;
 }
 
 .fa-heart{
-        margin: -34px 40px 20px auto;
+
         color: lightslategrey;
         font-size: larger;
         appearance: none;
@@ -33,13 +44,13 @@
         -webkit-tap-highlight-color: transparent;
         transition: 500ms;
 
-        
+
         &:checked{
             margin: -34px 40px 20px auto;
             font-weight: 900;
             cursor: pointer;
             background: -webkit-gradient(linear, right top, left bottom, from($primary), to($secondary));
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             transform: translate(0px, 0px);
         }
@@ -47,7 +58,7 @@
         &:active{
             font-weight: 900;
             background: -webkit-gradient(linear, right top, left bottom, from($primary), to($secondary));
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-animation-name: fadeOut;
             -webkit-animation-duration: 280ms;
@@ -60,8 +71,9 @@
         }
     }
             /* -------------------------------- keyframes fadeOut ------------------------------- */
+            //ANCHOR header
 
-            @-webkit-keyframes fadeOut { 
+            @keyframes fadeOut { 
                 0% { opacity: 0.7; }
                 20% { opacity: 0.5; }
                 40% { opacity: 0.3; }
@@ -69,6 +81,5 @@
                 80% { opacity: 0.1; }
                 100% { opacity: 0; }
             }
-            
-            
+
 

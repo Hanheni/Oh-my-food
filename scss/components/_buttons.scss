@@ -1,0 +1,61 @@
+@mixin button {
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    width:85%;
+    border-radius: 20px;
+    margin-bottom:20px;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    background-color:$backgrounds;
+    box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.3);
+}
+
+
+.m-buttons{
+@include button();
+}
+
+.a-steps__buttonsnumbubbles{
+    text-align: center;
+    width:18px;
+    border-radius: 25px;
+    background-color: $primary;
+    margin-left:-13px;
+    padding:5px;
+    color:white;
+    font-weight:400;
+}
+
+.a-steps__buttonsicons{
+    margin: 0 20px;
+}
+
+.o-buttons__pillshaped{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    background: linear-gradient(0deg, $primary 0%, $secondary 100%);
+    height: 25px;
+    width:fit-content;
+    padding: 10px 25px;
+
+        &:hover{
+            opacity: 75%;
+            background:$secondary;
+        }
+    }
+
+    .m-buttons--recipes{
+        @include button();
+        background-color: white;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .price{
+            margin-left:90%;
+        }
+    }

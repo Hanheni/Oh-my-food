@@ -1,5 +1,10 @@
 {
     "editor.selectionHighlight": false,
     "editor.occurrencesHighlight": false,
-    "editor.matchBrackets": "never"
+    "editor.matchBrackets": "never",
+    "cSpell.words": [
+        "heftiba",
+        "preconnect",
+        "shotsoflouis"
+    ]
 }
