@@ -1,406 +1,46 @@
 /* ---------------------------- colors variables/mixin/components  ---------------------------- */
-.o-containers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 100%;
-  background-color: whitesmoke;
-}
-
-.o-containers__footer {
-  background-color: #444444;
-  color: white;
-  padding: 20px;
-}
-
-.o-containers__faq {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 10px;
-}
-
-.o-containers__heading {
-  padding-bottom: 20px;
-  width: 100%;
-  background-color: whitesmoke;
-}
-
-.o-containers__heading-restaurants {
-  background-color: white;
-}
-
-.o-containers__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: whitesmoke;
-}
-
-.o-containers__logo {
-  background-color: white;
-  position: relative;
-  -webkit-box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.5);
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.o-containers--restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: -40px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  background-color: whitesmoke;
-}
-
-.header__image--bastille {
-  background-size: cover;
-  background-position: center center;
-  height: 250px;
-}
-
-.a-cards__image--restaurant {
-  background-size: cover;
-  height: 180px;
-  background-position: center center;
-  border-top-left-radius: 13.5px;
-  border-top-right-radius: 13.5px;
-}
-
-.m-results__cards {
-  width: 90%;
-  max-height: 250px;
-  background-color: white;
-  border-radius: 13.5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
-}
-
-input[type='checkbox'] {
-  display: none;
-  margin-right: -17px;
-}
-
-.heart {
-  margin: -34px 40px 30px auto;
-}
-
-.fa-heart {
-  color: lightslategrey;
-  font-size: larger;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.fa-heart:checked {
-  margin: -34px 40px 20px auto;
-  font-weight: 900;
-  cursor: pointer;
-  background: -webkit-gradient(linear, right top, left bottom, from(#aa4fff), to(#ed69ff));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-
-.fa-heart:active {
-  font-weight: 900;
-  background: -webkit-gradient(linear, right top, left bottom, from(#aa4fff), to(#ed69ff));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation-name: fadeOut;
-  -webkit-animation-duration: 280ms;
-  animation-name: fadeOut;
-  animation-duration: 280ms;
-  -webkit-transform: translate(0px, -30px) scale(1.05);
-          transform: translate(0px, -30px) scale(1.05);
-  -webkit-transition: -webkit-transform 350ms;
-  transition: -webkit-transform 350ms;
-  transition: transform 350ms;
-  transition: transform 350ms, -webkit-transform 350ms;
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);
-          transition-timing-function: cubic-bezier(0, 0, 1, 1);
-  opacity: 0%;
-}
-
-/* -------------------------------- keyframes fadeOut ------------------------------- */
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 0.7;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  40% {
-    opacity: 0.3;
-  }
-  60% {
-    opacity: 0.3;
-  }
-  80% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 0.7;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  40% {
-    opacity: 0.3;
-  }
-  60% {
-    opacity: 0.3;
-  }
-  80% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.text__center {
-  text-align: center;
-}
-
-.text__left {
-  width: 100%;
-  font-weight: 800;
-  padding-left: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.text__left--mrg15 {
-  margin-left: 15px;
-}
-
-.text__left--restaurant-names {
-  width: 100%;
-  font-weight: 800;
-  padding-left: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 20px;
-  font-family: shrikhand;
-  font-size: 35px;
-}
-
-.text__left--courses {
-  width: 100%;
-  font-weight: 800;
-  padding-left: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  font-weight: 200;
-  font-size: 20px;
-}
-
-.m-buttons {
+mixin body__steps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 85%;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 8px 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: whitesmoke;
-  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
-}
-
-.a-steps__buttonsnumbubbles {
-  text-align: center;
-  width: 18px;
-  border-radius: 25px;
-  background-color: #aa4fff;
-  margin-left: -13px;
-  padding: 5px;
-  color: white;
-  font-weight: 400;
-}
-
-.a-steps__buttonsicons {
-  margin: 0 20px;
-}
-
-.o-buttons__pillshaped {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 25px;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left bottom, left top, from(#aa4fff), to(#ed69ff));
-  background: linear-gradient(0deg, #aa4fff 0%, #ed69ff 100%);
-  height: 25px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 25px;
-}
-
-.o-buttons__pillshaped:hover {
-  opacity: 75%;
-  background: #ed69ff;
-}
-
-.m-buttons--recipes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 85%;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 8px 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: whitesmoke;
-  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.m-buttons--recipes .price {
-  margin-left: 90%;
-}
-
-/* --------------------------- end colors variables/mixin/components -------------------------- */
-/* ------------------------------- backgrounds ------------------------------ */
-.backgrounds {
-  margin-top: 0;
-  background: whitesmoke;
   width: 100%;
+  padding: 8px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.backgrounds--subtitle {
-  background: #d8d8d8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.fa {
+  width: 16px;
 }
 
-/* ----------------------------- end backgrounds ---------------------------- */
-/* ------------------------ texts and subtexts specs ------------------------ */
-.maintextsubs {
-  text-align: center;
+.fa-map-marker-alt {
+  padding-right: 10px;
 }
 
-.maintextsubsubs__restaurants {
-  margin: 15px 0 0 10px;
+.fas {
+  padding-right: 10px;
 }
 
-.subtexts {
-  font-weight: 300;
-  margin: 5px 0 10px 15px;
-}
-
-.subtexts-thin {
+.txt--thin {
   font-weight: 100;
   padding: 0 10px 0 10px;
 }
 
-.links {
+.txt--white {
+  color: white;
+}
+
+.link {
   color: white;
   text-decoration: none;
   font-weight: 400;
@@ -422,28 +62,341 @@ input[type='checkbox'] {
   padding-bottom: 10px;
 }
 
-/* ---------------------- end texts and subtexts specs ---------------------- */
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.body__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 8px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  align-items: center;
+}
+
+.card {
+  max-height: 250px;
+  background-color: white;
+  border-radius: 13.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
+}
+
+.card__image {
+  background-size: cover;
+  height: 180px;
+  background-position: center center;
+  border-top-left-radius: 13.5px;
+  border-top-right-radius: 13.5px;
+}
+
+.card__txt {
+  margin: 0 0 0 25px;
+  padding-top: 20px;
+}
+
+.card__subtxt {
+  margin: 0 0 0 25px;
+  padding-top: 15px;
+  font-weight: 300;
+}
+
+input[type='checkbox'] {
+  display: none;
+  margin-right: -17px;
+}
+
+.heart {
+  margin: -34px 40px 30px auto;
+}
+
+.fa-heart {
+  color: lightslategrey;
+  font-size: larger;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.txt--center {
+  text-align: center;
+}
+
+.btn {
+  margin: auto;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(#aa4fff), to(#ed69ff));
+  background: linear-gradient(0deg, #aa4fff 0%, #ed69ff 100%);
+  height: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 25px;
+}
+
+.btn:hover {
+  opacity: 75%;
+  background: #ed69ff;
+}
+
+.btn__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 8px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.btn__menu .price {
+  margin-left: 90%;
+}
+
+/* --------------------------- end colors variables/mixin/components -------------------------- */
 /* --------------------------------- layout --------------------------------- */
 body {
   font-family: roboto;
   margin: 0;
 }
 
-.logo {
-  height: 30px;
-  margin-top: 15px;
+.left {
+  margin-right: auto;
+  padding-left: 60px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 0px;
+}
+
+.box--vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.header {
+  padding-bottom: 35px;
+}
+
+.header__localization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: darkgrey;
+}
+
+.brandlogo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 20px;
+  padding-top: 20px;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
-.fa {
-  width: 16px;
+.steps__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 8px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.fa-map-marker-alt {
-  padding-right: 10px;
+.steps {
+  width: 85%;
 }
 
-.fas {
-  padding-right: 10px;
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.step-num {
+  text-align: center;
+  width: 18px;
+  border-radius: 25px;
+  background-color: #aa4fff;
+  margin-left: -13px;
+  padding: 5px;
+  color: white;
+  font-weight: 400;
+}
+
+.step-icon {
+  margin: 0 20px;
+}
+
+.cards {
+  padding: 25px;
+}
+
+.lightgrey {
+  background-color: whitesmoke;
+  padding-bottom: 25px;
+}
+
+.darkgrey {
+  background-color: #dddddd;
+  padding: 25px;
+}
+
+.footer_color {
+  background-color: #2e2e2e;
+  padding-bottom: 25px;
+}
+
+.footer_color {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 25px;
+  color: white;
+}
+
+.footer__title {
+  font-family: Shrikhand;
+  font-size: 25px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -11,87 +11,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-<!----  so chrome stops resizing while in mobile preview mode -->
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 </head>
 
 <body>
-<div class="body__layout">
-<!--------------------- page header with logo, subtext ---------------------->
-        <div class="o-containers">
-            <div class="o-containers__logo"><img class="logo" alt="Oh My Food logo" src="images/logo/ohmyfood.png"></div>
-            <div class="text__center o-containers__heading">
-                <span class="backgrounds--subtitle"><i class="fa fa-map-marker-alt" aria-hidden="true"></i><p class="heading__subtitle">Paris, Belleville</p></span>
+    <div class="page">
+        <!-- ------------------ page header with logo, subtext -------------------- -->
+        <div class="page__header lightgrey">
+            <div class="brandlogo"><img class="brandlogo__image" alt="Oh My Food logo" src="images/logo/ohmyfood.png"></div>
+            <div class="box--vertical">
+                <div class="box darkgrey"><i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                    <p class="txt">Paris, Belleville</p>
+                </div>
                 <h2>Book the menu you like</h2>
-                <p class="text__center subtexts-thin">Discover top-of-the-art restaurants we picked for you</p>
-                <div class="o-buttons__pillshaped"><a href="/results_restaurants.html" class="links">Explore our restaurants</a></div>
-        </div>
-        </div>
-
-<!------------------- end page header with logo, subtext ---------------->
-<!--------------------------- menu steps ordering -------------------------->
-<div class="o-containers__faq">
-<h3 class="text__left">How it works</h3>
-        <div class="m-buttons">
-            <div class="a-steps__buttonsnumbubbles">1</div>
-            <div class="a-steps__buttonsicons"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-            <p>Chose a restaurant</p>
-        </div>
-        <div class="m-buttons">
-            <div class="a-steps__buttonsnumbubbles">2</div>
-            <div class="a-steps__buttonsicons"><i class="fa fa-list" aria-hidden="true"></i></div>
-            <p>Create your menu</p>
-        </div>
-        <div class="m-buttons">
-            <div class="a-steps__buttonsnumbubbles">3</div>
-            <div class="a-steps__buttonsicons"><i class="fa fa-store"></i></div>
-            <p>Go enjoy it at the restaurant</p>
-        </div>
-</div>
-
-<!------------------------- end menu steps ordering ------------------------->
-<!---------------------------- container results ------------------------>
-
-    <div class="o-containers__cards">
-        <h3 class="text__left">Restaurants</h3>
-        <div class="m-results__cards">
-            <div  class="a-cards__image--restaurant" style="background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)"></div>
-            <p class="text__left--mrg15">Bastille</p>
-            <p class="subtexts">Paris</p>
-            <label for="faved" class="heart"> <input type="checkbox" name="favheart" id="faved"><i class="far fa-heart"></i></label>
-        </div>
-        <div class="m-results__cards">
-            <div class="a-cards__image--restaurant" style="background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg)"></div>
-            <p class="text__left--mrg15">The Enchanted Plate</p>
-            <p class="subtexts">New York</p>
-            <label for="faved" class="heart"> <input type="checkbox" name="favheart" id="faved"><i class="far fa-heart"></i></label>
-        </div>
-        <div class="m-results__cards">
-        <div class="a-cards__image--restaurant" style="background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)"></div>
-            <p class="text__left--mrg15">The Full Palette</p>
-            <p class="subtexts">New York</p>
-            <label for="faved" class="heart"> <input type="checkbox" name="favheart" id="faved"><i class="far fa-heart"></i></label>
-        </div>
-        <div class="m-results__cards">
-            <div class="a-cards__image--restaurant" style="background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)"></div>
-                <p class="text__left--mrg15">Le Gourmand</p>
-                <p class="subtexts">Paris</p>
-                <label for="faved" class="heart"> <input type="checkbox" name="favheart" id="faved"><i class="far fa-heart"></i></label>
+                <p class="txt center txt--thin">Discover top-of-the-art restaurants we picked for you</p>
+                <div class="btn"><a href="/results_restaurants.html" class="link">Explore our restaurants</a></div>
             </div>
+        </div>
+
+        <!-- ----------------- end page header with logo, subtext -------------- -->
+        <!-- ------------------------- menu steps ordering ------------------------ -->
+        <div class="steps__box">
+            <h3 class="left">How it works</h3>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                <p>Chose a restaurant</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-icon"><i class="fa fa-list" aria-hidden="true"></i></div>
+                <p>Create your menu</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-icon"><i class="fa fa-store"></i></div>
+                <p>Go enjoy it at the restaurant</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- ----------------------- end menu steps ordering ---------------------- -->
+        <!-- -------------------------- container results ---------------------- -->
+
+        <div class="cards lightgrey">
+            <h3 class="txt">Restaurants</h3>
+
+            <div class="card">
+                <div class="card__image"
+                    style="background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)">
+                </div>
+                <p class="card__txt">Bastille</p>
+                <p class="card__subtxt">Paris</p>
+                <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <div class="card__image"
+                    style="background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg)"></div>
+                <p class="card__txt">The Enchanted Plate</p>
+                <p class="card__subtxt">New York</p>
+                <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <div class="card__image"
+                    style="background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)"></div>
+                <p class="card__txt">The Full Palette</p>
+                <p class="card__subtxt">New York</p>
+                <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <div class="card__image"
+                    style="background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)"></div>
+                <p class="card__txt">Le Gourmand</p>
+                <p class="card__subtxt">Paris</p>
+                <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
+            </div>
+
+        </div>
+
+
+
+        <div class="page__footer footer_color">
+            <p class="footer__title">ohmyfood</p>
+            <p><i class="fas fa-utensils" aria-hidden="true"></i>Suggest a restaurant</p>
+            <p><i class="fas fa-handshake" aria-hidden="true"></i>Become a partner</p>
+            <p>Legal</p>
+            <p>Contact</p>
+        </div>
     </div>
-
-
-    <div class="o-containers__footer">
-        <p class="end-page-menu__title">ohmyfood</p>
-        <p class="end-page-menu"><i class="fas fa-utensils" aria-hidden="true"></i>Suggest a restaurant</p>
-        <p class="end-page-menu"><i class="fas fa-handshake" aria-hidden="true"></i>Become a partner</p>
-        <p class="end-page-menu__text">Legal</p>
-        <p class="end-page-menu__text">Contact</p>
-    </div>
-</div>
-
 
 
 </body>

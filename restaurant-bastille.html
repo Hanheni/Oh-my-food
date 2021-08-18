@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!----  so chrome stops resizing while in mobile preview mode -->
+    <!--  so chrome stops resizing while in mobile preview mode -->
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-    <link rel="stylesheet" href="/scss/styles.css">
+    <link rel="stylesheet" href="/scss/styles_restaurants.css">
     <title>Oh my Food - Bastille</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,72 +17,94 @@
 <body>
 
 
-<div class="body__layout">
-
+<div class="page">
 
 <!-- -------------------------- header and image --------------------------- -->
 
-    <div class="o-containers__heading-restaurants">
-            <div class="o-containers__logo"><img class="logo" alt="Oh My Food logo" src="images/logo/ohmyfood.png"></div>
-            <div class="text__center o-containers_heading"></div>
+    <div class="header">
+
+    <div class="brandlogo"><i class="fas fa-arrow-left arrow"></i><img class="logo" alt="Oh My Food logo" src="images/logo/ohmyfood.png"></div>
+    <div  class="header__picture" style="background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)"></div>
     </div>
-    <div  class="header__image--bastille" style="background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)"></div>
+
 
 <!-- ---------------------- end page header and image ---------------------- -->
 
 
-<!-- ------------------------ container restaurant ------------------------- -->
+<!-- ------------------------ container courses ------------------------- -->
 
-    <div class="o-containers--restaurants">
-        <h3 class="text__left--restaurant-names">Bastille</h3>
+<div class="box__menu">
+    <p class="shrikhand text-align--left full-width">Bastille</p>
+    <h3 class="text-align--left text--thin full-width">ENTRÉES</h3>
 
-            <h3 class="text__left--courses">ENTRÉES</h3>
-            <div class="m-buttons--recipes">
-                <p class="text__left--mrg15">Chose a restaurant</p>
-                <p class="subtexts">miam miam bon appétit baguette</p>
+        <div class="box__courses">
+            <div class="courses">
+                <p class="text"">Citrus Squid Carpaccio</p>
+                <p class="text--small text--thin">with orange zest</p>
                 <p class="price">00€</p>
             </div>
-            <div class="m-buttons--recipes">
-                <p class="text__left--mrg15">Create your menu</p>
-            </div>
-            <div class="m-buttons--recipes">
-                <p class="text__left--mrg15">Go enjoy it at the restaurant</p>
-            </div>
+        </div>
 
-            <h3 class="text__left--courses">DÉSSERTS</h3>
-            <div class="m-buttons--recipes">
-                <p class="text__left--mrg15">Chose a restaurant</p>
+        <div class="box__courses">
+            <div class="courses">
+                <p class="text">Create your menu</p>
+                <p class="text--small text--thin">Lucja et Roberu vont manger des pierogis</p>
+                <p class="price">00€</p>
             </div>
-            <div class="m-buttons--recipes">
-                <p class="text__left--mrg15">Create your menu</p>
+        </div>
+
+
+    <h3 class="text-align--left text--thin full-width">DÉSSERTS</h3>
+        <div class="box__courses">
+            <div class="courses">
+                <p class="text">Chose a restaurant</p>
+                <p class="text--small text--thin">Lodsow pue du fion</p>
+                <p class="price">00€</p>
             </div>
-            <div class="m-buttons--recipes">
-                <p class="text__left--mrg15">Go enjoy it at the restaurant</p>
+        </div>
+
+        <div class="box__courses">
+            <div class="courses">
+                <p class="text">Create your menu</p>
+                <p class="text--small text--thin">blablabla la baguette à Feliks</p>
+                <p class="price">00€</p>
             </div>
-    </div>
+        </div>
+
+        <div class="box__courses">
+            <div class="courses">
+                <p class="text">Go enjoy it at the restaurant</p>
+                <p class="text--small text--thin">blablabla Mihail est mou</p>
+                <p class="price">00€</p>
+            </div>
+        </div>
 
 <!-- ---------------------- end container restaurant ----------------------- -->
 
+<!-- ------------------------- button order --------------------------------- -->
+
+    <div class="btn"><a href="/results_restaurants.html" class="link">Order</a></div>
+</div>
 
 
 
 
 <!-- ------------------------------- footer -------------------------------- -->
 
-    <div class="o-containers__footer">
-        <p class="end-page-menu__title">ohmyfood</p>
-        <p class="end-page-menu"><i class="fas fa-utensils" aria-hidden="true"></i>Suggest a restaurant</p>
-        <p class="end-page-menu"><i class="fas fa-handshake" aria-hidden="true"></i>Become a partner</p>
-        <p class="end-page-menu__text">Legal</p>
-        <p class="end-page-menu__text">Contact</p>
-    </div>
+
+<div class="page__footer footer_color">
+    <p class="footer__title">ohmyfood</p>
+    <p><i class="fas fa-utensils" aria-hidden="true"></i>Suggest a restaurant</p>
+    <p><i class="fas fa-handshake" aria-hidden="true"></i>Become a partner</p>
+    <p>Legal</p>
+    <p>Contact</p>
+</div>
 
 <!-- ----------------------------- end footer ------------------------------ -->
 
 
 
 
-</div>
 
 
 

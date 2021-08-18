@@ -1,0 +1,189 @@
+/* ---------------------------- colors variables/mixin/components  ---------------------------- */
+.lightgrey {
+  background-color: whitesmoke;
+  padding-bottom: 25px;
+}
+
+.darkgrey {
+  background-color: #dddddd;
+  padding: 25px;
+}
+
+/* -------------------------- texts and fonts ------------------------------------------------*/
+.page {
+  font-family: roboto;
+}
+
+.text {
+  margin: 0;
+}
+
+.text-align--left {
+  margin-left: 15%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.shrikhand {
+  font-family: Shrikhand;
+  font-size: 40px;
+  margin-left: 90px;
+}
+
+.text--thin {
+  font-weight: 100;
+}
+
+.text--small {
+  font-size: 11px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+.fas {
+  padding-right: 10px;
+}
+
+/* --------------------------- end colors variables/mixin/components -------------------------- */
+/* --------------------------------- layout --------------------------------- */
+body {
+  margin: 0px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+  background-color: white;
+}
+
+.arrow {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.brandlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  padding: 10px 0 10px 0;
+  width: 90%;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header__picture {
+  background-size: cover;
+  height: 270px;
+}
+
+.box__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e0e0e0;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-top: -80px;
+}
+
+.box__courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.courses {
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+
+.price {
+  position: relative;
+  margin-top: -30px;
+  padding-left: 90%;
+  margin-bottom: 0;
+}
+
+.btn {
+  margin: 40px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(#aa4fff), to(#ed69ff));
+  background: linear-gradient(0deg, #aa4fff 0%, #ed69ff 100%);
+  height: 25px;
+  width: 150px;
+  padding: 10px 25px;
+}
+
+.btn:hover {
+  opacity: 75%;
+  background: #ed69ff;
+}
+
+.footer_color {
+  background-color: #2e2e2e;
+  padding-bottom: 25px;
+}
+
+.footer_color {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 25px;
+  color: white;
+}
+
+.footer__title {
+  font-family: Shrikhand;
+  font-size: 25px;
+}
+/*# sourceMappingURL=styles_restaurants.css.map */

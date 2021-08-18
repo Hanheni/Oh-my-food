@@ -1,27 +1,47 @@
-//ANCHOR header
+@keyframes fadeOut { 
+    0% { opacity: 0.7; }
+    20% { opacity: 0.5; }
+    40% { opacity: 0.3; }
+    60% { opacity: 0.3; }
+    80% { opacity: 0.1; }
+    100% { opacity: 0; }
+}
 
-@mixin body_cards{
-    width:90%;
-    max-height: 250px;
-    background-color:white;
-    border-radius: 13.5px;
-    display: flex;
+.body__cards{
+    display:flex;
+    align-items: center;
     flex-direction: column;
-    margin-bottom:25px;
+    justify-content:flex-start;
+    width:100%;
+    padding: 8px 0px;
     box-sizing: border-box;
-    box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.3);
+    align-items: center;
 }
 
-.a-cards__image--restaurant{
-    background-size: cover;
-    height:180px;
-    background-position: center center;
-    border-top-left-radius: 13.5px;
-    border-top-right-radius: 13.5px;
-}
 
-.m-results__cards{
+.card{
     @include body_cards();
+    
+
+        &__image{
+        background-size: cover;
+        height:180px;
+        background-position: center center;
+        border-top-left-radius: 13.5px;
+        border-top-right-radius: 13.5px;
+        }
+
+        &__txt{
+            margin:0 0 0 25px;
+            padding-top: 20px;
+            
+        }
+
+        &__subtxt {
+            margin: 0 0 0 25px;
+            padding-top: 15px;
+            font-weight: 300;
+        }
 }
 
 
@@ -35,51 +55,13 @@ input[type='checkbox']{
     margin: -34px 40px 30px auto;
 }
 
+
 .fa-heart{
 
         color: lightslategrey;
         font-size: larger;
         appearance: none;
         cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transition: 500ms;
-
-
-        &:checked{
-            margin: -34px 40px 20px auto;
-            font-weight: 900;
-            cursor: pointer;
-            background: -webkit-gradient(linear, right top, left bottom, from($primary), to($secondary));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transform: translate(0px, 0px);
-        }
-
-        &:active{
-            font-weight: 900;
-            background: -webkit-gradient(linear, right top, left bottom, from($primary), to($secondary));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-animation-name: fadeOut;
-            -webkit-animation-duration: 280ms;
-            animation-name: fadeOut;
-            animation-duration:280ms;
-            transform: translate(0px, -30px) scale(1.05);
-            transition: transform 350ms;
-            transition-timing-function: cubic-bezier(0, 0, 1, 1);
-            opacity: 0%;
-        }
     }
-            /* -------------------------------- keyframes fadeOut ------------------------------- */
-            //ANCHOR header
-
-            @keyframes fadeOut { 
-                0% { opacity: 0.7; }
-                20% { opacity: 0.5; }
-                40% { opacity: 0.3; }
-                60% { opacity: 0.3; }
-                80% { opacity: 0.1; }
-                100% { opacity: 0; }
-            }
 
 

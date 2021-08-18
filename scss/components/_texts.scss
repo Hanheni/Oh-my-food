@@ -1,0 +1,42 @@
+.fa{
+    width:16px;
+    &-map-marker-alt{
+    padding-right: 10px;
+    }
+    &s{
+        padding-right: 10px;
+    }
+}
+
+.txt{
+    
+    &--thin{
+        font-weight: 100;
+        padding: 0 10px 0 10px;
+    }
+
+    &--white{
+        color: white;
+    }
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+.end-page-menu{
+    font-weight:500;
+    &__text{
+        font-weight: 200;
+    }
+
+    &__title{
+        font-family: shrikhand;
+        font-size: 18px;
+        margin-top:0px;
+        padding-bottom: 10px;;
+    }
+}
