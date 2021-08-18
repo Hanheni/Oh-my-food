@@ -59,6 +59,7 @@ $backgrounds: rgb(245, 245, 245);
 
 body{
   margin:0px;
+  font-family: roboto;
 }
 
 .header{
@@ -145,17 +146,14 @@ body{
       }
 }
 
-.footer_color{
-    background-color: rgb(46, 46, 46);
-    padding-bottom:25px;
-  }
-
 .footer_color {
-    margin:0;
-    padding-top:10px;
-    padding-left:25px;
-    color:white;
-  }
+  background-color: rgb(46, 46, 46);
+  padding-bottom:25px;
+  margin:0;
+  padding-top:10px;
+  padding-left:25px;
+  color:white;
+}
 
 .footer__title{
     font-family: Shrikhand;

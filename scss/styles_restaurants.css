@@ -10,10 +10,6 @@
 }
 
 /* -------------------------- texts and fonts ------------------------------------------------*/
-.page {
-  font-family: roboto;
-}
-
 .text {
   margin: 0;
 }
@@ -54,6 +50,7 @@
 /* --------------------------------- layout --------------------------------- */
 body {
   margin: 0px;
+  font-family: roboto;
 }
 
 .header {
@@ -175,9 +172,6 @@ body {
 .footer_color {
   background-color: #2e2e2e;
   padding-bottom: 25px;
-}
-
-.footer_color {
   margin: 0;
   padding-top: 10px;
   padding-left: 25px;
