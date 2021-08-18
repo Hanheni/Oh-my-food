@@ -35,7 +35,6 @@ $backgrounds: rgb(245, 245, 245);
 .shrikhand{
   font-family: Shrikhand;
   font-size: 40px;
-  margin-left: 90px;
 }
 
 .text--thin{
@@ -69,6 +68,7 @@ body{
 .header{
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
   padding-bottom:35px;
   background-color:white;
@@ -86,13 +86,13 @@ body{
 
 .logo{
   padding:10px 0 10px 0;
-  width:90%;
-  box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.10);
+  width:250px;
 }
 
 .header__picture{
   background-size: cover;
   height:270px;
+  width:100%;
 }
 
 .box__menu{
@@ -132,7 +132,7 @@ body{
 }
 
 .btn{
- margin:40px 0 50px 0;
+  margin:40px 0 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
