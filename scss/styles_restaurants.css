@@ -1,4 +1,4 @@
-/* ---------------------------- colors variables/mixin/components  ---------------------------- */
+/* ------------------------------------------------- colors variables/mixin/components  --------------------------------------------- */
 .lightgrey {
   background-color: whitesmoke;
   padding-bottom: 25px;
@@ -6,20 +6,27 @@
 
 .darkgrey {
   background-color: #dddddd;
-  padding: 25px;
 }
 
-/* -------------------------- texts and fonts ------------------------------------------------*/
+/* -------------------------------------------------- texts, layout classes and fonts ------------------------------------------------*/
 .text {
   margin: 0;
 }
 
-.text-align--left {
+.mrg0 {
+  margin: 0;
+}
+
+.left {
   margin-left: 15%;
 }
 
 .full-width {
   width: 100%;
+}
+
+.padding25 {
+  padding: 25px;
 }
 
 .shrikhand {
@@ -53,7 +60,7 @@ body {
   font-family: roboto;
 }
 
-.header {
+.page__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,14 +76,10 @@ body {
           align-items: center;
   padding-bottom: 35px;
   background-color: white;
+  padding: 5px;
 }
 
-.arrow {
-  margin-top: 25px;
-  margin-right: 20px;
-}
-
-.brandlogo {
+.logo--small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,18 +88,31 @@ body {
           justify-content: center;
 }
 
-.logo {
-  padding: 10px 0 10px 0;
+.arrow {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.logo--image {
+  padding: 10px 0;
   width: 250px;
 }
 
 .header__picture {
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
-  height: 270px;
-  width: 100%;
+  height: 350px;
+}
+
+.whitesmoke {
+  background-color: whitesmoke;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-top: -80px;
 }
 
 .box__menu {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,17 +126,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #e0e0e0;
-  border-top-right-radius: 35px;
-  border-top-left-radius: 35px;
-  margin-top: -80px;
+  max-width: 700px;
 }
 
 .box__courses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 20px;
   margin-bottom: 20px;
   padding: 10px;
@@ -130,6 +143,10 @@ body {
           align-items: center;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  cursor: crosshair;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .courses {
@@ -137,7 +154,35 @@ body {
   padding: 5px 5px 5px 5px;
 }
 
+.input {
+  display: none;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.checkbox-menu-item {
+  display: none;
+}
+
+.checkbox-menu-item:checked + label .card-checked {
+  width: 30px;
+}
+
+.card-checked {
+  width: 0;
+  overflow: hidden;
+}
+
 .price {
+  position: relative;
+  margin-top: -30px;
+  padding-left: 90%;
+  margin-bottom: 0;
+}
+
+.fa-check-circle {
   position: relative;
   margin-top: -30px;
   padding-left: 90%;
@@ -169,17 +214,72 @@ body {
   background: #ed69ff;
 }
 
-.footer_color {
-  background-color: #2e2e2e;
+.footer {
   padding-bottom: 25px;
   margin: 0;
   padding-top: 10px;
   padding-left: 25px;
+  margin: auto;
+  max-width: 700px;
+}
+
+.footer_color {
+  background-color: #2e2e2e;
   color: white;
 }
 
 .footer__title {
-  font-family: Shrikhand;
   font-size: 25px;
+}
+
+/* here you put a . in front of input and label making them a class which they are not
+.input {
+    display: none;
+}
+
+.label {
+    cursor: pointer;
+} */
+/* your input has this class which we want to hide  */
+.checkbox-menu-item {
+  display: none;
+}
+
+.checkbox-menu-item:checked + label .card-checked {
+  width: 30px;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card-title {
+  display: block;
+}
+
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-checked {
+  width: 0;
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles_restaurants.css.map */

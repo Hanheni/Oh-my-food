@@ -19,6 +19,14 @@ mixin body__steps {
           box-sizing: border-box;
 }
 
+.padding25 {
+  padding: 25px;
+}
+
+.txt--center {
+  text-align: center;
+}
+
 .fa {
   width: 16px;
 }
@@ -62,49 +70,125 @@ mixin body__steps {
   padding-bottom: 10px;
 }
 
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 0.7;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  40% {
-    opacity: 0.3;
-  }
-  60% {
-    opacity: 0.3;
-  }
-  80% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 0;
-  }
+/* --------------------------- end colors variables/mixin/components -------------------------- */
+/* --------------------------------- layout -------------------------------------------------- */
+body {
+  font-family: roboto;
+  margin: 0;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 0.7;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  40% {
-    opacity: 0.3;
-  }
-  60% {
-    opacity: 0.3;
-  }
-  80% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 0;
-  }
+.left {
+  padding-left: 15%;
 }
 
-.body__cards {
+.localization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 0px;
+}
+
+.box--vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.page__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+  background-color: white;
+}
+
+.logo--big {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.steps__box {
+  padding: 10px 0px;
+}
+
+.steps {
+  margin: auto;
+  width: 85%;
+}
+
+.step {
+  margin: auto;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.step-num {
+  text-align: center;
+  width: 18px;
+  border-radius: 25px;
+  background-color: #aa4fff;
+  margin-left: -13px;
+  padding: 5px;
+  color: white;
+  font-weight: 400;
+}
+
+.step-icon {
+  margin: 0 20px;
+}
+
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,37 +199,24 @@ mixin body__steps {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   width: 100%;
-  padding: 8px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  align-items: center;
-}
-
-.card {
-  max-height: 250px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: auto;
+  margin-bottom: 45px;
+  max-width: 600px;
   background-color: white;
+  background-position: center center;
   border-radius: 13.5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
 }
 
 .card__image {
   background-size: cover;
   height: 180px;
+  width: 100%;
   background-position: center center;
   border-top-left-radius: 13.5px;
   border-top-right-radius: 13.5px;
@@ -162,7 +233,7 @@ mixin body__steps {
   font-weight: 300;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
   margin-right: -17px;
 }
@@ -172,16 +243,12 @@ input[type='checkbox'] {
 }
 
 .fa-heart {
-  color: lightslategrey;
+  color: lightgrey;
   font-size: larger;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
-}
-
-.txt--center {
-  text-align: center;
 }
 
 .btn {
@@ -191,11 +258,11 @@ input[type='checkbox'] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 25px;
   font-weight: bold;
   background: -webkit-gradient(linear, left bottom, left top, from(#aa4fff), to(#ed69ff));
@@ -241,162 +308,33 @@ input[type='checkbox'] {
   margin-left: 90%;
 }
 
-/* --------------------------- end colors variables/mixin/components -------------------------- */
-/* --------------------------------- layout --------------------------------- */
-body {
-  font-family: roboto;
-  margin: 0;
-}
-
-.left {
-  margin-right: auto;
-  padding-left: 60px;
-}
-
-.box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 0px;
-}
-
-.box--vertical {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  padding-bottom: 45px;
-}
-
-.header {
-  padding-bottom: 35px;
-}
-
-.header__localization {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: darkgrey;
-}
-
-.brandlogo {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
-}
-
-.steps__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 8px 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.steps {
-  width: 85%;
-}
-
-.step {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: whitesmoke;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-}
-
-.step-num {
-  text-align: center;
-  width: 18px;
-  border-radius: 25px;
-  background-color: #aa4fff;
-  margin-left: -13px;
-  padding: 5px;
-  color: white;
-  font-weight: 400;
-}
-
-.step-icon {
-  margin: 0 20px;
-}
-
-.cards {
-  padding: 25px;
-}
-
 .lightgrey {
   background-color: whitesmoke;
-  padding-bottom: 25px;
 }
 
 .darkgrey {
   background-color: #dddddd;
-  padding: 25px;
+}
+
+.footer {
+  padding-bottom: 25px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 25px;
+  margin: auto;
+  max-width: 700px;
 }
 
 .footer_color {
   background-color: #2e2e2e;
-  padding-bottom: 25px;
-}
-
-.footer_color {
-  margin: 0;
-  padding-top: 10px;
-  padding-left: 25px;
   color: white;
 }
 
-.footer__title {
+.shrikhand {
   font-family: Shrikhand;
+}
+
+.footer__title {
   font-size: 25px;
 }
 /*# sourceMappingURL=styles.css.map */

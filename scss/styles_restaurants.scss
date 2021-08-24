@@ -1,4 +1,4 @@
-/* ---------------------------- colors variables/mixin/components  ---------------------------- */
+/* ------------------------------------------------- colors variables/mixin/components  --------------------------------------------- */
 
 $primary: rgb(170, 79, 255);
 $secondary: rgb(237, 105, 255);
@@ -7,42 +7,47 @@ $backgrounds: rgb(245, 245, 245);
 
 .lightgrey {
   background-color: $backgrounds;
-  padding-bottom:25px;
+  padding-bottom: 25px;
 }
-
 .darkgrey {
-    background-color: rgb(221, 221, 221);
-    padding: 25px;
+  background-color: rgb(221, 221, 221);
 }
 
-/* -------------------------- texts and fonts ------------------------------------------------*/
+/* -------------------------------------------------- texts, layout classes and fonts ------------------------------------------------*/
 
-.text{
-  margin:0;
-}
-.text-align--left{
-  margin-left:15%
+.text {
+  margin: 0;
 }
 
-.full-width{
-  width:100%;
+.mrg0 {
+  margin: 0;
+}
+.left {
+  margin-left: 15%;
 }
 
-.shrikhand{
+.full-width {
+  width: 100%;
+}
+
+.padding25 {
+  padding: 25px;
+}
+
+.shrikhand {
   font-family: Shrikhand;
   font-size: 40px;
 }
 
-.text--thin{
+.text--thin {
   font-weight: 100;
 }
 
-
-.text--small{
+.text--small {
   font-size: 11px;
 }
 
-.link{
+.link {
   color: white;
   text-decoration: none;
   font-weight: 400;
@@ -57,79 +62,111 @@ $backgrounds: rgb(245, 245, 245);
 
 /* --------------------------------- layout --------------------------------- */
 
-body{
-  margin:0px;
+body {
+  margin: 0px;
   font-family: roboto;
 }
 
-.header{
+.page__title {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-bottom:35px;
-  background-color:white;
+  padding-bottom: 35px;
+  background-color: white;
+  padding: 5px;
 }
 
-.arrow{
-  margin-top:25px;
+.logo--small {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  margin-top: 25px;
   margin-right: 20px;
 }
 
-.brandlogo {
-  display:flex;
-  justify-content: center;
+.logo--image {
+  padding: 10px 0;
+  width: 250px;
 }
 
-.logo{
-  padding:10px 0 10px 0;
-  width:250px;
-}
-
-.header__picture{
+.header__picture {
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
-  height:270px;
-  width:100%;
+  height: 350px;
 }
 
-.box__menu{
-  display:flex;
+.whitesmoke {
+  background-color: whitesmoke;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-top: -80px;
+}
+
+.box__menu {
+  margin: auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(224, 224, 224);
-  border-top-right-radius: 35px;
-  border-top-left-radius: 35px;
-  margin-top:-80px;
+  max-width: 700px;
 }
 
-.box__courses{
+.box__courses {
   display: flex;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 20px;
   margin-bottom: 20px;
   padding: 10px;
-  width:85%;
+  width: 85%;
   align-items: center;
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  cursor: crosshair;
+  flex-grow: 1;
 }
 
-.courses{
-  width:100%;
+.courses {
+  width: 100%;
   padding: 5px 5px 5px 5px;
 }
-
-
-.price{
-  position: relative;
-  margin-top:-30px;
-  padding-left:90%;
-  margin-bottom:0;
-
+.input {
+  display: none;
+}
+.label {
+  cursor: pointer;
 }
 
-.btn{
-  margin:40px 0 50px 0;
+.checkbox-menu-item {
+  display: none;
+}
+
+.checkbox-menu-item:checked + label .card-checked {
+  width: 30px;
+}
+
+.card-checked {
+  width: 0;
+  overflow: hidden;
+}
+
+.price {
+  position: relative;
+  margin-top: -30px;
+  padding-left: 90%;
+  margin-bottom: 0;
+}
+
+.fa-check-circle {
+  position: relative;
+  margin-top: -30px;
+  padding-left: 90%;
+  margin-bottom: 0;
+}
+
+.btn {
+  margin: 40px 0 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,25 +174,73 @@ body{
   font-weight: bold;
   background: linear-gradient(0deg, $primary 0%, $secondary 100%);
   height: 25px;
-  width:150px;
+  width: 150px;
   padding: 10px 25px;
 
-      &:hover{
-          opacity: 75%;
-          background:$secondary;
-      }
+  &:hover {
+    opacity: 75%;
+    background: $secondary;
+  }
+}
+
+.footer {
+  padding-bottom: 25px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 25px;
+  margin: auto;
+  max-width: 700px;
 }
 
 .footer_color {
   background-color: rgb(46, 46, 46);
-  padding-bottom:25px;
-  margin:0;
-  padding-top:10px;
-  padding-left:25px;
-  color:white;
+  color: white;
 }
 
-.footer__title{
-    font-family: Shrikhand;
-    font-size: 25px;
-  }
+.footer__title {
+  font-size: 25px;
+}
+
+/* here you put a . in front of input and label making them a class which they are not
+.input {
+    display: none;
+}
+
+.label {
+    cursor: pointer;
+} */
+
+/* your input has this class which we want to hide  */
+.checkbox-menu-item {
+  display: none;
+}
+
+.checkbox-menu-item:checked + label .card-checked {
+  width: 30px;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-title {
+  display: block;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-checked {
+  width: 0;
+  overflow: hidden;
+}
