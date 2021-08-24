@@ -123,7 +123,6 @@ body {
   width: 85%;
   align-items: center;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  cursor: crosshair;
   flex-grow: 1;
 }
 
@@ -136,6 +135,7 @@ body {
 }
 .label {
   cursor: pointer;
+  z-index: 99;
 }
 
 .checkbox-menu-item {
@@ -183,6 +183,35 @@ body {
   }
 }
 
+.fade-in {
+  animation-name: menu-fade;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade--delay1 {
+  animation-delay: 0.1s;
+}
+.fade--delay2 {
+  animation-delay: 0.2.5s;
+}
+.fade--delay3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes menu-fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .footer {
   padding-bottom: 25px;
   margin: 0;
@@ -199,48 +228,4 @@ body {
 
 .footer__title {
   font-size: 25px;
-}
-
-/* here you put a . in front of input and label making them a class which they are not
-.input {
-    display: none;
-}
-
-.label {
-    cursor: pointer;
-} */
-
-/* your input has this class which we want to hide  */
-.checkbox-menu-item {
-  display: none;
-}
-
-.checkbox-menu-item:checked + label .card-checked {
-  width: 30px;
-}
-
-.card {
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  border: 1px solid;
-  border-radius: 15px;
-}
-
-.card-body {
-  flex-grow: 1;
-}
-
-.card-title {
-  display: block;
-}
-
-.card-text {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-checked {
-  width: 0;
-  overflow: hidden;
 }
