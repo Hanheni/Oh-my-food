@@ -55,6 +55,10 @@ mixin body__steps {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .end-page-menu {
   font-weight: 500;
 }
