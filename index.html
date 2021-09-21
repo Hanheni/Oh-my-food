@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="/scss/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -16,72 +16,72 @@
 </head>
 
 <body>
-    <!-- -------------------------------- page header with logo, text --------------------------------------- -->
-    <div class="page__title lightgrey">
-        <div class="logo--big"><img alt="Oh My Food logo" src="./images/logo/ohmyfood.png">
-        </div>
-        <div class="box--vertical">
-            <div class="localization padding25  darkgrey"><i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-                <p class="txt">Paris, Belleville</p>
-            </div>
+    <!-- ------------------------------- page header with logo, text --------------------------------------- -->
+    <div class="page__title">
+        <div class="shadows logo--big"><img alt="Oh My Food logo" src="./images/logo/ohmyfood.png"></div>
+
+
+        <div class="lightgrey padding-bottom40">
+            <p class="txt-localization"><i class="fa fa-map-marker-alt" aria-hidden="true"></i>Paris, Belleville</p>
             <h2>Book the menu you like</h2>
-            <p class="txt center txt--thin">Discover top-of-the-art restaurants we picked for you</p>
-            <div class="btn"><a href="/results_restaurants.html" class="link">Explore our restaurants</a></div>
+            <p>Discover top-of-the-art restaurants we picked for you</p>
+            <div class="btn shadows"><a href="/results_restaurants.html">Explore our restaurants</a></div>
         </div>
+
     </div>
-    <!-- ------------------------------ end page header with logo, text -------------------------------------- -->
+    <!-- ----------------------------- end page header with logo, text -------------------------------------- -->
 
-    <!-- -------------------------------------- menu steps ordering ------------------------------------------ -->
+    <!-- -------------------------------------- block steps ordering ------------------------------------------ -->
 
-    <h3 class="left">How it works</h3>
+
     <div class="steps">
-        <div class="step">
+        <h3>How it works</h3>
+        <div class="step shadows">
             <div class="step-num">1</div>
             <div class="step-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
             <p>Chose a restaurant</p>
         </div>
-        <div class="step">
+        <div class="step shadows">
             <div class="step-num">2</div>
             <div class="step-icon"><i class="fa fa-list" aria-hidden="true"></i></div>
             <p>Create your menu</p>
         </div>
-        <div class="step">
+        <div class="step shadows">
             <div class="step-num">3</div>
             <div class="step-icon"><i class="fa fa-store"></i></div>
             <p>Go enjoy it at the restaurant</p>
         </div>
     </div>
 
-    <!-- ---------------------------------- end menu steps ordering ------------------------------------------- -->
-    <!-- ------------------------------------ container results ----------------------------------------------- -->
+    <!-- --------------------------------- end block steps ------------------------------------------- -->
 
-    <div class="padding25 lightgrey">
-        <h3 class="txt">Restaurants</h3>
-        <a href="restaurant-bastille.html">
-            <div class="card">
-                <div class="card__image"
-                    style="background-image: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)">
-                </div>
-                <p class="card__txt">Bastille</p>
-                <p class="card__subtxt">Paris</p>
-                <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
+    <!-- ------------------------------------ block results ----------------------------------------------- -->
+
+    <div class="restaurants__highlights auto__margin padding-bottom40 lightgrey">
+        <h3>Restaurants</h3>
+        <div class="card shadows">
+            <div class="card__image"
+                style="background-image: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)">
             </div>
-        </a>
-        <div class="card">
+            <p class="card__txt">Bastille</p>
+            <p class="card__subtxt">Paris</p>
+            <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
+        </div>
+        <div class="card shadows">
             <div class="card__image" style="background-image: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg)">
             </div>
             <p class="card__txt">The Enchanted Plate</p>
             <p class="card__subtxt">New York</p>
             <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
         </div>
-        <div class="card">
+        <div class="card shadows">
             <div class="card__image"
                 style="background-image: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)"></div>
             <p class="card__txt">The Full Palette</p>
             <p class="card__subtxt">New York</p>
             <div class="heart"><input type="checkbox"><i class="far fa-heart"></i></div>
         </div>
-        <div class="card">
+        <div class="card shadows">
             <div class="card__image"
                 style="background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)"></div>
             <p class="card__txt">Le Gourmand</p>
@@ -90,17 +90,16 @@
         </div>
     </div>
 
-    <!-- ------------------------------------------ end container result -------------------------------------------------- -->
-    <!-- ------------------------------------------------- footer---------------------------------------------------------- -->
+    <!-- ----------------------------------------- end block results -------------------------------------------------- -->
+    <!-- ------------------------------------------------ footer---------------------------------------------------------- -->
 
-    <div class="footer_color">
-        <div class="footer">
-            <p class="footer__title shrikhand">ohmyfood</p>
-            <p><i class="fas fa-utensils" aria-hidden="true"></i>Suggest a restaurant</p>
-            <p><i class="fas fa-handshake" aria-hidden="true"></i>Become a partner</p>
-            <p>Legal</p>
-            <p>Contact</p>
-        </div>
+
+    <div class="footer">
+        <p class="footer__title shrikhand">ohmyfood</p>
+        <p><i class="fas fa-utensils" aria-hidden="true"></i>Suggest a restaurant</p>
+        <p><i class="fas fa-handshake" aria-hidden="true"></i>Become a partner</p>
+        <p>Legal</p>
+        <p>Contact</p>
     </div>
 
 

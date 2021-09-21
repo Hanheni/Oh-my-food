@@ -1,39 +1,33 @@
-/* ---------------------------- colors variables/mixin/components  ---------------------------- */
+/* ---------------------------- colors variables/mixin/components/reusables  ---------------------------- */
 
 $primary: rgb(170, 79, 255);
 $secondary: rgb(237, 105, 255);
 $highlights: rgb(153, 226, 208);
-$backgrounds: rgb(245, 245, 245);
+$backgrounds: whitesmoke;
 
-mixin body__steps {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 8px 0px;
-  box-sizing: border-box;
+@mixin shadows {
+  -webkit-box-shadow: 0px 10px 13px -7px darkgrey,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px darkgrey, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.auto__margin {
+  margin: auto;
+}
+.padding-bottom40 {
+  padding-bottom: 40px;
+}
+.shadows {
+  @include shadows;
 }
 
-@mixin body_cards {
-  max-height: 250px;
-  background-color: white;
-  border-radius: 13.5px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
-  box-sizing: border-box;
-  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
+.lightgrey {
+  background-color: $backgrounds;
 }
 
-.padding25 {
-  padding: 25px;
+.shrikhand {
+  font-family: Shrikhand;
 }
-
-.txt--center {
-  text-align: center;
-}
-
 .fa {
   width: 16px;
   &-map-marker-alt {
@@ -44,91 +38,53 @@ mixin body__steps {
   }
 }
 
-.txt {
-  &--thin {
-    font-weight: 100;
-    padding: 0 10px 0 10px;
-  }
-
-  &--white {
-    color: white;
-  }
-}
-
-.link {
-  color: white;
-  text-decoration: none;
-  font-weight: 400;
-  text-align: center;
-}
-
 a {
   text-decoration: none;
+  color: white;
+  font-weight: 400;
 }
 
-.end-page-menu {
-  font-weight: 500;
-  &__text {
-    font-weight: 200;
-  }
-
-  &__title {
-    font-family: shrikhand;
-    font-size: 18px;
-    margin-top: 0px;
-    padding-bottom: 10px;
-  }
+input[type="checkbox"] {
+  display: none;
+  margin-right: -17px;
 }
 
-/* --------------------------- end colors variables/mixin/components -------------------------- */
+/* --------------------------- end colors variables/mixin/components/reusables -------------------------- */
 
-/* --------------------------------- layout -------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                    layout                                  */
+/* -------------------------------------------------------------------------- */
 
 body {
   font-family: roboto;
   margin: 0;
+  min-width: 400px;
 }
 
-.left {
-  padding-left: 15%;
-}
-
-.localization {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 0px;
-}
-
-.box--vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 45px;
-}
+/* ---------------------------- header and title mainpage --------------------------- */
 
 .page__title {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 35px;
-  background-color: white;
+  text-align: center;
+  font-family: roboto;
+  font-weight: 200;
+  background: white;
 }
 
 .logo--big {
-  justify-content: center;
-  position: relative;
-  display: flex;
-  width: 100%;
-  background-color: white;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px 0 10px 0;
 }
+
+.txt-localization {
+  padding: 20px 0 20px 0;
+  background-color: lightgrey;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* -------------------------- end header and title mainpage -------------------------- */
+
+/* ------------------------------- block steps ------------------------------ */
 
 .steps__box {
   padding: 10px 0px;
@@ -136,19 +92,17 @@ body {
 
 .steps {
   margin: auto;
-  width: 85%;
+  padding: 20px 100px 40px 100px;
 }
 
 .step {
-  margin: auto;
-  max-width: 600px;
   display: flex;
-  background-color: whitesmoke;
+  width: 100%;
+  background-color: $backgrounds;
   border-radius: 20px;
   margin-bottom: 20px;
   padding: 10px;
   align-items: center;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 
   &-num {
     text-align: center;
@@ -166,6 +120,27 @@ body {
   }
 }
 
+.btn {
+  margin: auto;
+  margin-top: 40px;
+  background: linear-gradient(0deg, $primary 0%, $secondary 100%);
+  width: fit-content;
+  padding: 15px 25px;
+  border-radius: 25px;
+  &:hover {
+    opacity: 75%;
+    background: $secondary;
+  }
+}
+
+/* ----------------------------- end block steps ---------------------------- */
+
+/* ---------------------------- block restaurants --------------------------- */
+
+.restaurants__highlights {
+  padding: 20px 100px;
+}
+
 .card {
   display: flex;
   align-items: center;
@@ -175,7 +150,6 @@ body {
   align-items: flex-start;
   margin: auto;
   margin-bottom: 45px;
-  max-width: 600px;
   background-color: white;
   background-position: center center;
   border-radius: 13.5px;
@@ -199,85 +173,156 @@ body {
     padding-top: 15px;
     font-weight: 300;
   }
+  .heart {
+    margin: -34px 40px 30px auto;
+  }
+  .fa-heart {
+    color: lightgrey;
+    font-size: larger;
+    appearance: none;
+    cursor: pointer;
+  }
 }
 
-input[type="checkbox"] {
-  display: none;
-  margin-right: -17px;
+/* -------------------------- end block restaurants ------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                          styling restaurants pages                         */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- animations ------------------------------- */
+
+.fade-in {
+  animation-name: menu-fade;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.heart {
-  margin: -34px 40px 30px auto;
+.fade--delay1 {
+  animation-delay: 0.1s;
+}
+.fade--delay2 {
+  animation-delay: 0.2s;
+}
+.fade--delay3 {
+  animation-delay: 0.3s;
 }
 
-.fa-heart {
-  color: lightgrey;
-  font-size: larger;
-  appearance: none;
-  cursor: pointer;
+@keyframes menu-fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-.btn {
+/* ----------------------------- end animations ----------------------------- */
+
+/* --------------------------- header restaurants --------------------------- */
+
+.logo--small {
   margin: auto;
-  margin-top: 40px;
+  padding: 10px 0;
+}
+.arrow {
+  margin-top: 25px;
+  margin-right: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+.header__picture {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  height: 350px;
+}
+
+/* ------------------------- end header restaurants ------------------------- */
+
+/* ------------------------------- body menus ------------------------------- */
+
+.layout__box {
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-top: -80px;
+  font-weight: 200;
+}
+
+.box__menu {
+  padding: 25px 100px;
+}
+
+.box__course {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+
+  &:hover {
+    .validation__box {
+      width: 75px;
+    }
+  }
+}
+
+.course {
+  width: 100%;
+  background: white;
+  margin: 0;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+
+.overflow_text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.course__price {
+  margin: auto 10px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.validation__box {
+  width: 0px;
+  background: rgb(73, 241, 185);
+  transition: width 1s;
+  right: 0;
+  top: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
-  font-weight: bold;
-  background: linear-gradient(0deg, $primary 0%, $secondary 100%);
-  height: 25px;
-  width: fit-content;
-  padding: 10px 25px;
-
-  &:hover {
-    opacity: 75%;
-    background: $secondary;
-  }
 }
 
-.btn__menu {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  padding: 8px 0px;
-  box-sizing: border-box;
-  background-color: white;
-  flex-direction: column;
-  align-items: flex-start;
-
-  .price {
-    margin-left: 90%;
-  }
+.validation__icon {
+  color: white;
 }
 
-.lightgrey {
-  background-color: $backgrounds;
-}
-
-.darkgrey {
-  background-color: rgb(221, 221, 221);
-}
+/* --------------------------------- footer --------------------------------- */
 
 .footer {
-  padding-bottom: 25px;
-  margin: 0;
-  padding-top: 10px;
-  padding-left: 25px;
-  margin: auto;
-  max-width: 700px;
-}
-
-.footer_color {
+  padding: 25px 100px;
   background-color: rgb(46, 46, 46);
   color: white;
 }
 
-.shrikhand {
-  font-family: Shrikhand;
-}
 .footer__title {
   font-size: 25px;
 }
+
+/* ------------------------------- end footer ------------------------------- */

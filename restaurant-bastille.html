@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Oh my Food - Bastille</title>
+    <title>Oh my Food</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--  so chrome stops resizing while in mobile preview mode -->
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
-    <link rel="stylesheet" href="./scss/styles_restaurants.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/scss/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -20,86 +19,99 @@
     <!-- ------------------------------------ header and image --------------------------------------------- -->
 
     <div class="page__title">
-        <div class="logo--small">
+        <div class="logo--small shadows">
             <a href="index.html"><i class="fas fa-arrow-left arrow"></i><img class="logo--image" alt="Oh My Food logo"
                     src="./images/logo/ohmyfood.png" />
             </a>
         </div>
     </div>
-    <!-- --------------------------------- end page header and image --------------------------------------- -->
 
-    <!-- ----------------------------------- container courses --------------------------------------------- -->
     <div class="header__picture"></div>
-    <div class="whitesmoke">
+
+    <!-- --------------------------------- end page header and image --------------------------------------- -->
+    <!-- ----------------------------------- container courses --------------------------------------------- -->
+    <!-- ---------------------------- body of menu ----------------------------- -->
+
+    <div class="layout__box lightgrey">
         <div class="box__menu">
-            <p class="shrikhand left full-width">Bastille</p>
-            <h3 class="left text--thin full-width fade-in fade--delay1">ENTRÉES</h3>
+            <h1 class="shrikhand">Bastille</h1>
 
-            <div class="box__courses fade-in fade--delay2">
-                <div class="courses">
-                    <input class="checkbox-menu-item" type="checkbox" name="my-checkbox" id="opt-in">
-                    <label for="opt-in" class="card">
-                        <p class="text mrg0">Citrus Squid Carpaccio</p>
-                        <p class="text--small text--thin">with orange zest</p>
-                        <p class="price">00€</p>
+            <p class="fade-in fade--delay1">ENTRÉES</p>
+            <!-- --------------------------- course bubbles --------------------------- -->
+            <div class="box__course shadows fade-in fade--delay2">
+                <div class="course">
+                    <h3 class="overflow_text">Citrus Squid Carpaccio</h3>
+                    <p class="overflow_text">with orange zest</p>
 
-                    </label>
+                </div>
+                <div class="course__price">25€</div>
+                <div class="validation__box">
+                    <div class="validation__icon z-transfo">
+                        <i class="fas fa-check-circle fa-lg"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box__courses fade-in fade--delay2">
-                <div class="courses">
-                    <input class="checkbox-menu-item" type="checkbox" name="my-checkbox" id="opt-in">
-                    <label for="opt-in" class="card">
-                        <p class="text mrg0">Create your menu</p>
-                        <p class="text--small text--thin">
-                            Lucja et Roberu vont manger des pierogis
-                        </p>
-                        <p class="price">00€</p>
+            <!-- ------------------------- end course bubble -------------------------- -->
+            <p class="fade-in fade--delay2">MAIN COURSE</p>
+            <div class="box__course shadows fade-in fade--delay2">
+                <div class="course">
+                    <h3 class="overflow_text">Citrus Squid Carpaccio</h3>
+                    <p class="overflow_text">with orange zest</p>
 
-                    </label>
+                </div>
+                <div class="course__price">25€</div>
+                <div class="validation__box">
+                    <div class="validation__icon z-transfo">
+                        <i class="fas fa-check-circle fa-lg"></i>
+                    </div>
                 </div>
             </div>
 
-            <h3 class="left text--thin full-width fade-in fade--delay2">DÉSSERTS</h3>
-            <div class="box__courses fade-in fade--delay3">
-                <div class="courses">
-                    <input class="checkbox-menu-item" type="checkbox" name="my-checkbox" id="opt-in">
-                    <label for="opt-in" class="card">
-                        <p class="text mrg0">Chose a restaurant</p>
-                        <p class="text--small text--thin">Lodsow pue du fion</p>
-                        <p class="price">00€</p>
+            <p class="fade-in fade--delay2">DÉSSERTS</p>
+            <div class="box__course shadows fade-in fade--delay2">
+                <div class="course">
+                    <h3 class="overflow_text">Citrus Squid Carpaccio</h3>
+                    <p class="overflow_text">with orange zest</p>
 
-                    </label>
+                </div>
+                <div class="course__price">25€</div>
+                <div class="validation__box">
+                    <div class="validation__icon z-transfo">
+                        <i class="fas fa-check-circle fa-lg"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box__courses fade-in fade--delay3">
-                <div class="courses">
-                    <input class="checkbox-menu-item" type="checkbox" name="my-checkbox" id="opt-in">
-                    <label for="opt-in" class="card">
-                        <p class="text mrg0">Create your menu</p>
-                        <p class="text--small text--thin">blablabla la baguette à Feliks</p>
-                        <p class="price">00€</p>
+            <div class="box__course shadows fade-in fade--delay2">
+                <div class="course">
+                    <h3 class="overflow_text">Citrus Squid Carpaccio</h3>
+                    <p class="overflow_text">with orange zest</p>
 
-                    </label>
+                </div>
+                <div class="course__price">25€</div>
+                <div class="validation__box">
+                    <div class="validation__icon z-transfo">
+                        <i class="fas fa-check-circle fa-lg"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="box__courses fade-in fade--delay3">
-                <div class="courses">
-                    <input class="checkbox-menu-item" type="checkbox" name="my-checkbox" id="opt-in">
-                    <label for="opt-in" class="card">
-                        <p class="text mrg0">Go enjoy it at the restaurant</p>
-                        <p class="text--small text--thin">blablabla Mihail est mou</p>
-                        <p class="price">00€</p>
+            <div class="box__course shadows fade-in fade--delay2">
+                <div class="course">
+                    <h3 class="overflow_text">Citrus Squid Carpaccio</h3>
+                    <p class="overflow_text">with orange zest</p>
 
-                    </label>
                 </div>
-
+                <div class="course__price">25€</div>
+                <div class="validation__box">
+                    <div class="validation__icon z-transfo">
+                        <i class="fas fa-check-circle fa-lg"></i>
+                    </div>
+                </div>
             </div>
 
-            <!-- ---------------------------------- end container restaurant --------------------------------------- -->
+            <!-- ---------------------------------- end core menu --------------------------------------- -->
 
             <!-- -------------------------------------- button order ----------------------------------------------- -->
 
@@ -108,6 +120,9 @@
             </div>
         </div>
     </div>
+    <!-- -------------------------- end button order --------------------------- -->
+    <!-- ----------------------------------- end container courses --------------------------------------------- -->
+
     <!-- -------------------------------------------------- footer -------------------------------------------------- -->
 
     <div class="footer_color">
@@ -123,7 +138,6 @@
             <p>Contact</p>
         </div>
     </div>
-
 
     <!-- -------------------------------------------------- end footer ------------------------------------------------ -->
 </body>
